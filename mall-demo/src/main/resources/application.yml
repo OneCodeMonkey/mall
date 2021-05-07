@@ -5,7 +5,7 @@ spring:
   application:
     name: mall-demo
   datasource:
-    url: jdbc:mysql://172.31.182.162:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://db:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     username: root
     password: root
   thymeleaf:
