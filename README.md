@@ -76,7 +76,7 @@ mall
 | Redis                | 分布式缓存          | https://redis.io/                              |
 | MongoDB              | NoSql数据库         | https://www.mongodb.com                        |
 | LogStash             | 日志收集工具        | https://github.com/elastic/logstash            |
-| Kibina               | 日志可视化查看工具  | https://github.com/elastic/kibana              |
+| Kibana               | 日志可视化查看工具  | https://github.com/elastic/kibana              |
 | Nginx                | 静态资源服务器      | https://www.nginx.com/                         |
 | Docker               | 应用容器引擎        | https://www.docker.com                         |
 | Jenkins              | 自动化部署工具      | https://github.com/jenkinsci/jenkins           |
@@ -204,4 +204,4 @@ mall
 
 [Apache License 2.0](https://github.com/macrozheng/mall/blob/master/LICENSE)
 
-Copyright (c) 2018-2021 macrozheng
+Copyright (c) 2018-2022 macrozheng

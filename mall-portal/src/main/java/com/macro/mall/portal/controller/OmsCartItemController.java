@@ -38,7 +38,7 @@ public class OmsCartItemController {
         return CommonResult.failed();
     }
 
-    @ApiOperation("获取某个会员的购物车列表")
+    @ApiOperation("获取当前会员的购物车列表")
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult<List<OmsCartItem>> list() {
@@ -46,7 +46,7 @@ public class OmsCartItemController {
         return CommonResult.success(cartItemList);
     }
 
-    @ApiOperation("获取某个会员的购物车列表,包括促销信息")
+    @ApiOperation("获取当前会员的购物车列表,包括促销信息")
     @RequestMapping(value = "/list/promotion", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult<List<CartPromotionItem>> listPromotion(@RequestParam(required = false) List<Long> cartIds) {
@@ -54,7 +54,7 @@ public class OmsCartItemController {
         return CommonResult.success(cartPromotionItemList);
     }
 
-    @ApiOperation("修改购物车中某个商品的数量")
+    @ApiOperation("修改购物车中指定商品的数量")
     @RequestMapping(value = "/update/quantity", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult updateQuantity(@RequestParam Long id,
@@ -66,7 +66,7 @@ public class OmsCartItemController {
         return CommonResult.failed();
     }
 
-    @ApiOperation("获取购物车中某个商品的规格,用于重选规格")
+    @ApiOperation("获取购物车中指定商品的规格,用于重选规格")
     @RequestMapping(value = "/getProduct/{productId}", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult<CartProduct> getCartProduct(@PathVariable Long productId) {
@@ -85,7 +85,7 @@ public class OmsCartItemController {
         return CommonResult.failed();
     }
 
-    @ApiOperation("删除购物车中的某个商品")
+    @ApiOperation("删除购物车中的指定商品")
     @RequestMapping(value = "/delete", method = RequestMethod.POST)
     @ResponseBody
     public CommonResult delete(@RequestParam("ids") List<Long> ids) {
@@ -96,7 +96,7 @@ public class OmsCartItemController {
         return CommonResult.failed();
     }
 
-    @ApiOperation("清空购物车")
+    @ApiOperation("清空当前会员的购物车")
     @RequestMapping(value = "/clear", method = RequestMethod.POST)
     @ResponseBody
     public CommonResult clear() {
